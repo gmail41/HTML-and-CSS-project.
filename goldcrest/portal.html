@@ -3,10 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Investor Portal | Goldcrest Partners</title>
-<meta name="description" content="Secure investor login for Goldcrest Partners.">
+<title>Investor Portal | Goldcrest Partners, LLC</title>
+<meta name="description" content="Investor login.">
 <meta name="robots" content="noindex, nofollow">
-
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
@@ -14,35 +13,31 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-<div class="wrap">
-<a class="brand" href="index.html" aria-label="Goldcrest Partners home"><span>Goldcrest Partners<small>Washington State Real Estate</small></span></a>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Goldcrest Partners home">Goldcrest Partners<small>LLC</small></a>
 <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
-<nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="strategy.html">Strategy</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li><li><a class="portal-link" href="portal.html" aria-current="page">Investor Portal</a></li></ul></nav>
-</div>
-</header>
+<nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="operations.html">Where We Operate</a></li><li><a href="methodology.html">Methodology</a></li><li><a href="contact.html">Contact</a></li><li><a href="portal.html" aria-current="page">Investor Portal</a></li></ul></nav>
+</div></header>
 <main id="main">
-<div class="page-hero"><div class="wrap"><div class="eyebrow">Investors</div><h1>Investor Portal</h1><p>Sign in to view reports and documents.</p></div></div>
-<section class="alt"><div class="wrap"><div class="portal-box">
-<h2>Investor login</h2>
-<p class="note">Access is by invitation. If you are an investor and need credentials, <a href="contact.html">contact us</a>.</p>
-<form id="portal-form" action="#" method="post" autocomplete="on">
-<label for="user">Email</label><input id="user" name="email" type="email" required autocomplete="username">
-<label for="pw">Password</label><input id="pw" name="password" type="password" required autocomplete="current-password">
+<div class="page-hero"><div class="wrap"><div class="kicker">Investor Portal</div><h1>Sign in.</h1><p>Access is limited to registered investors.</p></div></div>
+<section><div class="wrap"><div class="login">
+<div id="portal-alert" class="alert" role="alert"><ul><li>The user name or password provided is incorrect.</li></ul></div>
+<form id="portal-form" action="#" method="post" autocomplete="off">
+<label for="user">User name</label><input id="user" name="username" type="text" required>
+<label for="pw">Password</label><input id="pw" name="password" type="password" required>
 <button class="btn" type="submit">Sign in</button>
-<div id="portal-msg" class="form-msg" role="status"></div>
-</form></div></div></section>
+</form>
+<p class="note" style="margin-top:22px">Need access? <a href="contact.html">Contact investor relations</a>.</p>
+</div></div></section>
 </main>
-<footer class="site-footer">
-<div class="wrap">
+<footer class="site-footer"><div class="wrap">
 <div class="foot-grid">
-<div><h3>Goldcrest Partners</h3><p>A Washington State real estate investment LLC acquiring, renovating and selling homes, and operating a large residential rental portfolio.</p></div>
-<div><h3>Company</h3><ul><li><a href="strategy.html">Strategy</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-<div><h3>Investors</h3><ul><li><a href="portal.html">Investor Portal</a></li></ul></div>
+<div><h3>Goldcrest Partners, LLC</h3><p>A Washington State real estate investment firm.</p></div>
+<div><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="operations.html">Where We Operate</a></li><li><a href="methodology.html">Methodology</a></li></ul></div>
+<div><h3>Resources</h3><ul><li><a href="portal.html">Investor Portal</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
 </div>
-<div class="legal">&copy; <span id="yr">2026</span> Goldcrest Partners, LLC. All rights reserved. This website is for general information only and is not an offer to sell, or a solicitation of an offer to buy, any security or investment interest. Any such offer will be made only through formal offering documents to eligible investors. Past performance is not indicative of future results.</div>
-</div>
-</footer>
+<div class="legal">&copy; 2026 Goldcrest Partners, LLC. All rights reserved. This website is provided for general information only and does not constitute an offer to sell or a solicitation of an offer to buy any security or investment interest. Any such offer will be made only through formal offering documents to eligible investors.</div>
+</div></footer>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -8,26 +8,24 @@
     });
   }
 
-  // Investor portal: front-end shell only. Real authentication must be provided
-  // by a backend / auth service (see DEPLOY.md). Never validate credentials here.
+  // Investor portal: intentionally non-functional. It never authenticates and
+  // never transmits what is typed; it always shows the standard error banner.
   var login = document.getElementById('portal-form');
   if (login) {
     login.addEventListener('submit', function (e) {
       e.preventDefault();
-      var msg = document.getElementById('portal-msg');
-      msg.textContent = 'The investor portal is not yet connected to an authentication service. Please contact us for access.';
-      msg.classList.add('show');
+      document.getElementById('portal-alert').classList.add('show');
+      document.getElementById('pw').value = '';
     });
   }
 
-  // Contact form: if the form action is still the placeholder, do not pretend to send.
   var contact = document.getElementById('contact-form');
   if (contact) {
     contact.addEventListener('submit', function (e) {
       if (contact.getAttribute('action') === '#') {
         e.preventDefault();
         var msg = document.getElementById('contact-msg');
-        msg.textContent = 'This form is not yet connected to an email service. See DEPLOY.md, step 4.';
+        msg.textContent = 'This form is not yet connected to an email service. Please write to us directly at the email address shown on this page.';
         msg.classList.add('show');
       }
     });

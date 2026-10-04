@@ -1,7 +1,7 @@
 # Goldcrest Partners: deployment and indexing guide
 
 ## What is in this folder
-Static site (HTML/CSS/JS, no build step): `index`, `strategy`, `portfolio`, `contact`, `portal`, `404`,
+Static site (HTML/CSS/JS, no build step): `index`, `operations`, `methodology`, `contact`, `portal`, `404`,
 plus `robots.txt`, `sitemap.xml`, `favicon.svg`.
 
 ## 1. Replace placeholders before launch
@@ -24,4 +24,4 @@ Then add your custom domain in the host's dashboard and set the DNS records it s
 
 ## 4. Make the forms real
 - Contact form: set `action` in `contact.html` to a form service (Formspree, Netlify Forms, Getform). Until then it shows a "not connected" notice.
-- Investor portal: the page is a front-end shell. Real login needs an auth backend (Supabase Auth, Auth0, Clerk, or your host's password protection). Never check passwords in browser JavaScript.
+- Investor portal: intentionally non-functional. It always shows the standard "user name or password provided is incorrect" banner and sends nothing anywhere. If real investor logins are ever needed, use an auth service (Supabase Auth, Auth0, Clerk, or host password protection); never check passwords in browser JavaScript.
