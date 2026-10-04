@@ -6,6 +6,7 @@
 <title>Methodology | Goldcrest Partners, LLC</title>
 <meta name="description" content="Our approach to acquiring, renovating, selling and renting residential property, and the terminology we use.">
 <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#12110e">
 <link rel="canonical" href="https://www.example.com/methodology">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Goldcrest Partners, LLC">
@@ -13,36 +14,53 @@
 <meta property="og:description" content="Our approach to acquiring, renovating, selling and renting residential property, and the terminology we use.">
 <meta property="og:url" content="https://www.example.com/methodology">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/styles.css">
-
+<script src="/js/boot.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 <header class="site-header"><div class="wrap">
-<a class="brand" href="/" aria-label="Goldcrest Partners home">Goldcrest Partners<small>LLC</small></a>
-<button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
+<a class="brand" href="/" aria-label="Goldcrest Partners home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3.5 29V14.2L16 3.6l12.5 10.6V29" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 29h14" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="19.5" r="4.6" fill="#c49a52"/></svg><span>Goldcrest</span><small>Partners</small></a>
+<button class="nav-toggle" aria-controls="site-nav" aria-expanded="false"><span></span><span></span><b class="sr">Menu</b></button>
 <nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="/">Home</a></li><li><a href="/work">Where We Operate</a></li><li><a href="/methodology" aria-current="page">Methodology</a></li><li><a href="/investors">Investor Portal</a></li></ul></nav>
 </div></header>
 <main id="main">
-<div class="page-hero"><div class="wrap"><div class="kicker">Methodology</div><h1>A repeatable process.</h1><p>Our approach follows the lifecycle of a property, and uses the standard language of real estate private equity.</p></div></div>
-<section><div class="wrap"><div class="kicker">Process</div><h2>From acquisition to disposition</h2>
-<div class="rows">
-<div class="row"><h3>1. Acquire</h3><p>Source and underwrite property against consistent criteria.</p></div>
-<div class="row"><h3>2. Improve</h3><p>Renovate to a defined scope, schedule and standard.</p></div>
-<div class="row"><h3>3. Decide</h3><p>Sell the property, or retain it as a long-term rental.</p></div>
-<div class="row"><h3>4. Operate</h3><p>Manage retained properties for durable, recurring income.</p></div>
-</div></div></section>
-<section class="alt"><div class="wrap"><div class="kicker">Terminology</div><h2>The language of our business</h2>
-<dl class="gloss"><div class="g"><dt>Acquisition</dt><dd>The purchase of a property that meets our underwriting standards.</dd></div><div class="g"><dt>Value-add</dt><dd>An investment approach that improves a property through renovation or better operations to increase its value.</dd></div><div class="g"><dt>Scope of work</dt><dd>The defined list of renovation tasks, materials and timeline for a property.</dd></div><div class="g"><dt>Disposition</dt><dd>The sale of a property, ending our ownership.</dd></div><div class="g"><dt>Buy and hold</dt><dd>Owning a property long term, typically as a rental, for recurring income and appreciation.</dd></div><div class="g"><dt>Capital recycling</dt><dd>Reinvesting proceeds from sales into new acquisitions.</dd></div><div class="g"><dt>Stabilization</dt><dd>The point at which a property is in good condition and leased on an ongoing basis.</dd></div><div class="g"><dt>Underwriting</dt><dd>The process of analyzing a property and its risks before committing capital.</dd></div><div class="g"><dt>Asset management</dt><dd>Oversight of a property's performance and strategy over its life.</dd></div></dl>
-<p class="note" style="margin-top:18px">Definitions are general and for information only.</p></div></section>
-<section class="band"><div class="wrap"><h2>Get in touch with our team.</h2><a class="btn" href="/contact">Contact Us</a></div></section>
-</main>
-<footer class="site-footer"><div class="wrap">
-<div class="foot-grid">
-<div><h3>Goldcrest Partners, LLC</h3><p>A Washington State real estate investment firm.</p></div>
-<div><h3>Explore</h3><ul><li><a href="/">Home</a></li><li><a href="/work">Where We Operate</a></li><li><a href="/methodology">Methodology</a></li></ul></div>
-<div><h3>Resources</h3><ul><li><a href="/investors">Investor Portal</a></li><li><a href="/contact">Contact Us</a></li></ul></div>
+<section class="hero page-hero dark">
+<div class="wordmark" aria-hidden="true">Goldcrest</div>
+<div class="wrap">
+<div class="kicker" data-reveal data-delay="80">Methodology</div>
+<h1 class="hero-title" data-split data-noexit><span class="ln">A process,</span> <span class="ln"><em>repeated.</em></span></h1>
+<div class="hero-foot">
+<p class="lead" data-reveal data-delay="500">Our approach follows the life of a property, and uses the standard language of real estate private equity.</p>
+<p class="hero-meta" data-reveal data-delay="650">Acquire<br>Improve<br>Decide<br>Operate</p>
+<div class="cue" data-reveal data-delay="800"><i></i>Scroll</div>
 </div>
+</div>
+</section>
+<section class="dark"><div class="wrap">
+<div class="sec-head"><h2 data-split>From acquisition to disposition.</h2><p class="muted" data-reveal>Four stages that take a property from first look to resale or long-term hold.</p></div>
+<div class="rows steps"><div class="row" data-reveal data-end="0.75"><span class="big" data-speed="-0.06">01</span><h3>Acquire</h3><p>Source and underwrite property against consistent criteria.</p></div><div class="row" data-reveal data-end="0.75"><span class="big" data-speed="-0.06">02</span><h3>Improve</h3><p>Renovate to a defined scope, schedule and standard.</p></div><div class="row" data-reveal data-end="0.75"><span class="big" data-speed="-0.06">03</span><h3>Decide</h3><p>Sell the property, or retain it as a long-term rental.</p></div><div class="row" data-reveal data-end="0.75"><span class="big" data-speed="-0.06">04</span><h3>Operate</h3><p>Manage retained properties for durable, recurring income.</p></div></div>
+</div></section>
+<section><div class="wrap">
+<div class="sec-head"><h2 data-split>The language of our business.</h2><p class="muted" data-reveal>The terms we use, in plain English.</p></div>
+<dl class="gloss"><div class="g" data-reveal data-end="0.85"><dt>Acquisition</dt><dd>The purchase of a property that meets our underwriting standards.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Value-add</dt><dd>An investment approach that improves a property through renovation or better operations to increase its value.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Scope of work</dt><dd>The defined list of renovation tasks, materials and timeline for a property.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Disposition</dt><dd>The sale of a property, ending our ownership.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Buy and hold</dt><dd>Owning a property long term, typically as a rental, for recurring income and appreciation.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Capital recycling</dt><dd>Reinvesting proceeds from sales into new acquisitions.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Stabilization</dt><dd>The point at which a property is in good condition and leased on an ongoing basis.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Underwriting</dt><dd>The process of analyzing a property and its risks before committing capital.</dd></div><div class="g" data-reveal data-end="0.85"><dt>Asset management</dt><dd>Oversight of a property&rsquo;s performance and strategy over its life.</dd></div></dl>
+<p class="note" data-reveal>Definitions are general and for information only.</p>
+</div></section>
+<section class="dark cta"><div class="wrap">
+<p class="huge" data-split>Let&rsquo;s <em>talk.</em></p>
+<div class="cta-row" data-reveal><p>Investors, property owners and vendors are all welcome. Tell us what you have in mind and we&rsquo;ll get back to you.</p><a class="btn" href="/contact">Contact us <span class="arr"></span></a></div>
+</div></section>
+</main>
+<footer class="site-footer dark"><div class="wrap">
+<div class="foot-grid">
+<div data-reveal><h3>Goldcrest Partners, LLC</h3><p class="tag">Residential real estate investment, across Washington State.</p></div>
+<div data-reveal data-end="0.6"><h3>Explore</h3><ul><li><a href="/">Home</a></li><li><a href="/work">Where We Operate</a></li><li><a href="/methodology">Methodology</a></li></ul></div>
+<div data-reveal data-end="0.52"><h3>Resources</h3><ul><li><a href="/investors">Investor Portal</a></li><li><a href="/contact">Contact Us</a></li></ul></div>
+</div>
+<span class="foot-mark" data-split="chars" data-end="0.9" data-noexit aria-hidden="true">Goldcrest</span>
 <div class="legal">&copy; 2026 Goldcrest Partners, LLC. All rights reserved. This website is provided for general information only and does not constitute an offer to sell or a solicitation of an offer to buy any security or investment interest. Any such offer will be made only through formal offering documents to eligible investors.</div>
 </div></footer>
 <script src="/js/main.js"></script>
