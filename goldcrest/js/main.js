@@ -169,9 +169,6 @@
   });
   var hero = document.querySelector('.hero');
   var heroH = 1, hp = 0, hpW = -1;
-  var marquees = [].slice.call(document.querySelectorAll('.marquee-track')).map(function (t) {
-    return { el: t, half: 1, top: 0, h: 0, base: 0 };
-  });
 
   var vh = window.innerHeight, maxScroll = 0, darkRanges = [];
   function measure() {
@@ -179,18 +176,12 @@
     maxScroll = Math.max(0, root.scrollHeight - vh);
     items.forEach(function (it) { it.top = docTop(it.el); it.h = it.el.offsetHeight; });
     parallax.forEach(function (p) { p.top = docTop(p.el); p.h = p.el.offsetHeight; });
-    marquees.forEach(function (m) {
-      m.half = m.el.scrollWidth / 2 || 1;
-      m.top = docTop(m.el.parentNode);
-      m.h = m.el.parentNode.offsetHeight;
-    });
     if (hero) heroH = hero.offsetHeight || 1;
     darkRanges = ranges();
     kick();
   }
 
   var started = false, t0 = 0, last = 0, running = false;
-  var vel = 0, skew = 0, prevY = window.scrollY;
 
   function frame(now) {
     var dt = Math.min(64, now - (last || now)) || 16.667;
@@ -240,24 +231,9 @@
       if (hp !== hpW) { hero.style.setProperty('--hp', hp.toFixed(4)); hpW = hp; }
     }
 
-    // marquee keeps drifting while on screen; scroll speed pushes and skews it
-    var dy = y - prevY;
-    prevY = y;
-    vel += (dy - vel) * ease(0.2, dt);
-    var tsk = Math.max(-10, Math.min(10, vel * 0.35));
-    skew += (tsk - skew) * ease(0.12, dt);
-    marquees.forEach(function (m) {
-      if (y + vh < m.top || y > m.top + m.h) return;
-      busy = true;
-      m.base += dt * 0.045 + Math.abs(vel) * 0.9;
-      var x = m.base % m.half;
-      m.el.style.setProperty('--mx', x.toFixed(1));
-      m.el.style.setProperty('--skew', skew.toFixed(2));
-    });
-
     root.style.setProperty('--sp', maxScroll ? (y / maxScroll).toFixed(4) : '0');
 
-    if (busy || Math.abs(vel) > 0.05) requestAnimationFrame(frame);
+    if (busy) requestAnimationFrame(frame);
     else { running = false; last = 0; }
   }
 
