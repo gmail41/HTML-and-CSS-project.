@@ -104,3 +104,11 @@ textarea{min-height:150px;resize:vertical}
   section{padding:56px 0}
   .hero{padding:72px 0 64px}
 }
+.form-msg.err{border-left-color:#b3261e;background:#fdecea}
+.band{background:var(--navy);color:#fff;padding:56px 0}
+.band .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.band h2{color:#fff;margin:0}
+.band .btn{background:#fff;color:var(--navy)}
+.band .btn:hover{background:#dbe6f2;color:var(--navy)}
+.cards.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:860px){.cards.two{grid-template-columns:1fr}}
